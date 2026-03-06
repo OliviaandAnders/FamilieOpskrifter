@@ -1,0 +1,17 @@
+﻿TITLE: Example Dish
+SERVINGS: 4
+TIME: 45 min
+
+INGREDIENTS:
+- 500 g ingredient 1
+- 2 tbsp ingredient 2
+- 1 tsp salt
+
+METHOD:
+1. Step one.
+2. Step two.
+3. Step three.
+
+NOTER:
+- Optional note 1.
+- Optional note 2.

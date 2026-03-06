@@ -1,0 +1,487 @@
+﻿:root {
+  --bg: #f6f1e8;
+  --surface: #fffcf6;
+  --ink: #1f1a16;
+  --muted: #6d6052;
+  --accent: #cb5f37;
+  --accent-2: #f0c274;
+  --ring: rgba(203, 95, 55, 0.35);
+  --radius: 18px;
+  --shadow: 0 16px 40px rgba(48, 31, 14, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, #ffe9cf 0%, transparent 30%),
+    radial-gradient(circle at 100% 5%, #f4d6c9 0%, transparent 34%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+.bg-shape {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(50px);
+  z-index: -1;
+  opacity: 0.45;
+}
+
+.bg-shape-one {
+  width: 360px;
+  height: 360px;
+  top: -120px;
+  right: -80px;
+  background: #ffc57a;
+}
+
+.bg-shape-two {
+  width: 400px;
+  height: 400px;
+  left: -160px;
+  bottom: -130px;
+  background: #ec9f6f;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 20px 44px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 10px 0 14px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.1rem, 4.5vw, 4rem);
+  line-height: 1.02;
+  max-width: 760px;
+}
+
+.lead {
+  margin: 0;
+  max-width: 680px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 13px 20px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(181, 70, 31, 0.33);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(181, 70, 31, 0.4);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-actions .cta {
+  margin-top: 0;
+}
+
+.cta-secondary {
+  background: #8f5f3e;
+  box-shadow: 0 8px 18px rgba(90, 56, 34, 0.3);
+}
+
+.cta-secondary:hover {
+  box-shadow: 0 12px 22px rgba(90, 56, 34, 0.36);
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto 72px;
+  padding: 0 20px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+h2 {
+  margin: 0;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(1.5rem, 2.6vw, 2.4rem);
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.control {
+  display: grid;
+  gap: 8px;
+}
+
+.control span {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.control input,
+.control select {
+  width: 100%;
+  border: 1px solid rgba(95, 68, 45, 0.22);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--ink);
+  outline: none;
+}
+
+.control input:focus,
+.control select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: block;
+  background: var(--surface);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  border: 1px solid rgba(95, 68, 45, 0.12);
+  box-shadow: var(--shadow);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(42, 25, 10, 0.25);
+  border-color: var(--ring);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #e4d7c8;
+}
+
+.card span {
+  display: block;
+  padding: 12px 14px 6px;
+  font-weight: 700;
+  font-size: 0.93rem;
+}
+
+.card small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 0 14px 14px;
+}
+
+.empty {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+@media (max-width: 680px) {
+  .hero {
+    padding-top: 52px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.recipe-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 46px 20px 72px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.recipe-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 520px) 1fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.recipe-media img {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(95, 68, 45, 0.12);
+}
+
+.recipe-content {
+  background: var(--surface);
+  border: 1px solid rgba(95, 68, 45, 0.12);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.detail-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.detail-title {
+  margin: 8px 0 10px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.detail-description {
+  margin: 0;
+  color: var(--muted);
+}
+
+.detail-meta {
+  margin: 14px 0 22px;
+  font-weight: 700;
+}
+
+.detail-block h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-family: "DM Serif Display", Georgia, serif;
+}
+
+.detail-block + .detail-block {
+  margin-top: 18px;
+}
+
+.detail-block ul,
+.detail-block ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.recipe-missing {
+  background: var(--surface);
+  border: 1px solid rgba(95, 68, 45, 0.12);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.recipe-missing h1 {
+  margin-top: 0;
+}
+
+@media (max-width: 980px) {
+  .recipe-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wheel-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+.wheel-head {
+  margin-bottom: 24px;
+}
+
+.wheel-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+  max-width: 760px;
+}
+
+.spin-btn {
+  min-width: 130px;
+  margin-top: 0;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.spin-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 8px 18px rgba(181, 70, 31, 0.22);
+}
+
+.wheel-message {
+  margin: 12px 0 18px;
+  min-height: 1.2em;
+}
+
+.wheel-stage {
+  position: relative;
+  margin: 0 auto;
+  width: min(86vw, 560px);
+  aspect-ratio: 1 / 1;
+}
+
+.wheel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 10px solid #fff3e0;
+  box-shadow: 0 20px 40px rgba(49, 30, 12, 0.22);
+  display: grid;
+  place-items: center;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 3rem;
+  color: #53392a;
+}
+
+.wheel-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.wheel-pointer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 34px solid #1f1a16;
+  z-index: 3;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.28));
+}
+
+.winner-card {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid rgba(95, 68, 45, 0.12);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.winner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 220px;
+}
+
+.winner-info {
+  padding: 18px 20px 20px 0;
+}
+
+.winner-info h2 {
+  margin: 8px 0 8px;
+}
+
+.winner-meta {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+@media (max-width: 780px) {
+  .wheel-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .spin-btn {
+    width: fit-content;
+  }
+
+  .winner-card {
+    grid-template-columns: 1fr;
+  }
+
+  .winner-card img {
+    max-height: 280px;
+  }
+
+  .winner-info {
+    padding: 14px 16px 18px;
+  }
+}

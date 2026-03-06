@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hvad Skal Vi Spise? | Familie Opskrifter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-one" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-two" aria-hidden="true"></div>
+
+  <main class="wheel-page">
+    <a class="back-link" href="./index.html">← Tilbage til alle opskrifter</a>
+
+    <header class="wheel-head">
+      <p class="kicker">Aftenens valg</p>
+      <h1>Spin hjulet og find opskriften til i aften</h1>
+      <p class="lead">Vælg en kategori først, spin hjulet, og få en tilfældig opskrift.</p>
+    </header>
+
+    <section class="wheel-controls" aria-label="Wheel controls">
+      <label class="control">
+        <span>Kategori</span>
+        <select id="wheelCategory"></select>
+      </label>
+      <button id="spinButton" class="cta spin-btn" type="button">Spin</button>
+    </section>
+
+    <p id="wheelMessage" class="empty wheel-message" role="status" aria-live="polite"></p>
+
+    <section class="wheel-stage">
+      <div class="wheel-pointer" aria-hidden="true"></div>
+      <div id="wheel" class="wheel" role="img" aria-label="Opskriftshjul"></div>
+    </section>
+
+    <section id="winnerCard" class="winner-card" hidden>
+      <img id="winnerImage" src="" alt="" />
+      <div class="winner-info">
+        <p id="winnerCategory" class="detail-kicker"></p>
+        <h2 id="winnerTitle"></h2>
+        <p id="winnerMeta" class="winner-meta"></p>
+        <a id="winnerLink" class="cta" href="#">Åbn opskrift</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./data/recipes.js"></script>
+  <script>
+    const categoryLabelMap = {
+      dinner: "Dinner",
+      desserts: "Desserts",
+      cakes: "Cakes",
+      uncategorized: "Uncategorized"
+    };
+
+    const wheelCategory = document.getElementById("wheelCategory");
+    const spinButton = document.getElementById("spinButton");
+    const wheelMessage = document.getElementById("wheelMessage");
+    const wheel = document.getElementById("wheel");
+    const winnerCard = document.getElementById("winnerCard");
+    const winnerImage = document.getElementById("winnerImage");
+    const winnerCategory = document.getElementById("winnerCategory");
+    const winnerTitle = document.getElementById("winnerTitle");
+    const winnerMeta = document.getElementById("winnerMeta");
+    const winnerLink = document.getElementById("winnerLink");
+
+    let allRecipes = [];
+    let currentCandidates = [];
+    let isSpinning = false;
+    let currentRotation = 0;
+
+    function categoryLabel(category) {
+      return categoryLabelMap[category] || category;
+    }
+
+    function setMessage(text) {
+      wheelMessage.textContent = text;
+    }
+
+    function buildCategoryOptions(recipes) {
+      const categories = [...new Set(recipes.map((recipe) => recipe.category).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b, "da"));
+
+      wheelCategory.textContent = "";
+      const allOption = document.createElement("option");
+      allOption.value = "";
+      allOption.textContent = "Alle kategorier";
+      wheelCategory.appendChild(allOption);
+
+      categories.forEach((category) => {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent = categoryLabel(category);
+        wheelCategory.appendChild(option);
+      });
+    }
+
+    function getCandidates() {
+      const selectedCategory = wheelCategory.value;
+      return allRecipes.filter((recipe) => !selectedCategory || recipe.category === selectedCategory);
+    }
+
+    function polarPoint(deg) {
+      const radians = (deg - 90) * (Math.PI / 180);
+      return {
+        x: 50 + 50 * Math.cos(radians),
+        y: 50 + 50 * Math.sin(radians)
+      };
+    }
+
+    function buildWheelVisual(candidates) {
+      if (!candidates.length) {
+        wheel.style.background = "#e8dccf";
+        wheel.textContent = "?";
+        return;
+      }
+
+      wheel.textContent = "";
+      wheel.style.background = "transparent";
+      const ns = "http://www.w3.org/2000/svg";
+      const xlinkNs = "http://www.w3.org/1999/xlink";
+      const svg = document.createElementNS(ns, "svg");
+      const defs = document.createElementNS(ns, "defs");
+      svg.setAttribute("viewBox", "0 0 100 100");
+      svg.setAttribute("class", "wheel-svg");
+      svg.setAttribute("aria-hidden", "true");
+
+      const step = 360 / candidates.length;
+      const borderPalette = ["#fff4dc", "#fde6ba", "#f7d79a", "#f2c889"];
+
+      candidates.forEach((recipe, i) => {
+        const patternId = `slicePattern${i}`;
+        const pattern = document.createElementNS(ns, "pattern");
+        pattern.setAttribute("id", patternId);
+        pattern.setAttribute("patternUnits", "userSpaceOnUse");
+        pattern.setAttribute("x", "0");
+        pattern.setAttribute("y", "0");
+        pattern.setAttribute("width", "100");
+        pattern.setAttribute("height", "100");
+
+        const image = document.createElementNS(ns, "image");
+        image.setAttribute("x", "0");
+        image.setAttribute("y", "0");
+        image.setAttribute("width", "100");
+        image.setAttribute("height", "100");
+        image.setAttribute("preserveAspectRatio", "xMidYMid slice");
+        image.setAttribute("href", recipe.image);
+        image.setAttributeNS(xlinkNs, "xlink:href", recipe.image);
+
+        pattern.appendChild(image);
+        defs.appendChild(pattern);
+
+        const startDeg = i * step;
+        const endDeg = (i + 1) * step;
+        const start = polarPoint(startDeg);
+        const end = polarPoint(endDeg);
+        const largeArc = step > 180 ? "1" : "0";
+
+        const path = document.createElementNS(ns, "path");
+        path.setAttribute(
+          "d",
+          `M 50 50 L ${start.x.toFixed(4)} ${start.y.toFixed(4)} A 50 50 0 ${largeArc} 1 ${end.x.toFixed(4)} ${end.y.toFixed(4)} Z`
+        );
+        path.setAttribute("fill", `url(#${patternId})`);
+        path.setAttribute("stroke", borderPalette[i % borderPalette.length]);
+        path.setAttribute("stroke-width", "0.65");
+        svg.appendChild(path);
+      });
+
+      const centerCap = document.createElementNS(ns, "circle");
+      centerCap.setAttribute("cx", "50");
+      centerCap.setAttribute("cy", "50");
+      centerCap.setAttribute("r", "7.8");
+      centerCap.setAttribute("fill", "#1f1a16");
+      centerCap.setAttribute("stroke", "#fff3e0");
+      centerCap.setAttribute("stroke-width", "1.2");
+
+      svg.appendChild(defs);
+      svg.appendChild(centerCap);
+      wheel.appendChild(svg);
+    }
+
+    function renderWinner(recipe) {
+      winnerImage.src = recipe.image;
+      winnerImage.alt = recipe.title;
+      winnerCategory.textContent = categoryLabel(recipe.category);
+      winnerTitle.textContent = recipe.title;
+      winnerMeta.textContent = [recipe.time, recipe.servings ? `Portioner: ${recipe.servings}` : ""]
+        .filter(Boolean)
+        .join(" · ");
+      winnerLink.href = `./recipe.html?id=${encodeURIComponent(recipe.id)}`;
+      winnerCard.hidden = false;
+    }
+
+    function refreshCandidates() {
+      currentCandidates = getCandidates();
+      buildWheelVisual(currentCandidates);
+      winnerCard.hidden = true;
+
+      if (!currentCandidates.length) {
+        spinButton.disabled = true;
+        setMessage("Ingen opskrifter i den valgte kategori.");
+      } else {
+        spinButton.disabled = false;
+        setMessage(`${currentCandidates.length} opskrifter klar til spin.`);
+      }
+    }
+
+    function spin() {
+      if (isSpinning || !currentCandidates.length) {
+        return;
+      }
+
+      isSpinning = true;
+      spinButton.disabled = true;
+      wheelCategory.disabled = true;
+      setMessage("Spinner...");
+
+      const winnerIndex = Math.floor(Math.random() * currentCandidates.length);
+      const winner = currentCandidates[winnerIndex];
+      const step = 360 / currentCandidates.length;
+      const winnerCenter = (winnerIndex + 0.5) * step;
+      const extraTurns = 4 + Math.floor(Math.random() * 4);
+      const target = extraTurns * 360 + (360 - winnerCenter);
+
+      currentRotation += target;
+      wheel.style.transition = "transform 3200ms cubic-bezier(0.16, 1, 0.3, 1)";
+      wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+      window.setTimeout(() => {
+        isSpinning = false;
+        wheelCategory.disabled = false;
+        spinButton.disabled = currentCandidates.length === 0;
+        setMessage(`Valgt: ${winner.title}`);
+        renderWinner(winner);
+      }, 3300);
+    }
+
+    async function loadRecipes() {
+      if (Array.isArray(window.__RECIPES__)) {
+        return window.__RECIPES__;
+      }
+
+      const response = await fetch("./data/recipes.json", { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load recipes (${response.status})`);
+      }
+      return response.json();
+    }
+
+    async function init() {
+      setMessage("Indlæser opskrifter...");
+      try {
+        allRecipes = await loadRecipes();
+      } catch (error) {
+        console.error(error);
+        allRecipes = [];
+      }
+
+      if (!allRecipes.length) {
+        buildCategoryOptions([]);
+        buildWheelVisual([]);
+        spinButton.disabled = true;
+        setMessage("Kunne ikke indlæse opskrifter lige nu.");
+        return;
+      }
+
+      buildCategoryOptions(allRecipes);
+      refreshCandidates();
+    }
+
+    wheelCategory.addEventListener("change", refreshCandidates);
+    spinButton.addEventListener("click", spin);
+    init();
+  </script>
+</body>
+</html>

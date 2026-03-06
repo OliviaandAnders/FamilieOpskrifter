@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opskrift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-one" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-two" aria-hidden="true"></div>
+
+  <main class="recipe-page">
+    <a class="back-link" href="./index.html">← Tilbage til alle opskrifter</a>
+
+    <article id="recipeDetail" class="recipe-layout" hidden>
+      <section class="recipe-media">
+        <img id="recipeImage" src="" alt="" />
+      </section>
+
+      <section class="recipe-content">
+        <p id="recipeCategory" class="detail-kicker"></p>
+        <h1 id="recipeTitle" class="detail-title"></h1>
+        <p id="recipeDescription" class="detail-description"></p>
+
+        <div class="detail-meta" id="recipeMeta"></div>
+
+        <section class="detail-block">
+          <h2>Ingredienser</h2>
+          <ul id="ingredientsList"></ul>
+        </section>
+
+        <section class="detail-block">
+          <h2>Fremgangsmåde</h2>
+          <ol id="methodList"></ol>
+        </section>
+
+        <section id="notesBlock" class="detail-block" hidden>
+          <h2>Noter</h2>
+          <ul id="notesList"></ul>
+        </section>
+      </section>
+    </article>
+
+    <section id="recipeMissing" class="recipe-missing" hidden>
+      <h1>Opskriften blev ikke fundet</h1>
+      <p>Denne opskrift findes ikke endnu. Gå tilbage og vælg en anden opskrift.</p>
+      <a class="cta" href="./index.html">Tilbage</a>
+    </section>
+  </main>
+
+  <script src="./data/recipes.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    const detail = document.getElementById("recipeDetail");
+    const missing = document.getElementById("recipeMissing");
+    const missingTitle = missing.querySelector("h1");
+    const missingText = missing.querySelector("p");
+
+    function toLabel(category) {
+      const map = {
+        dinner: "Dinner",
+        desserts: "Desserts",
+        cakes: "Cakes",
+        uncategorized: "Uncategorized"
+      };
+      return map[category] || category;
+    }
+
+    function renderList(listEl, items) {
+      listEl.textContent = "";
+      const normalizedItems = Array.isArray(items) ? items : [];
+      normalizedItems.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        listEl.appendChild(li);
+      });
+    }
+
+    function renderRecipe(recipe) {
+      document.title = `${recipe.title} | Familie Opskrifter`;
+      document.getElementById("recipeImage").src = recipe.image;
+      document.getElementById("recipeImage").alt = recipe.title;
+      document.getElementById("recipeCategory").textContent = toLabel(recipe.category);
+      document.getElementById("recipeTitle").textContent = recipe.title;
+      document.getElementById("recipeDescription").textContent = recipe.description || "";
+
+      const metaBits = [recipe.time, recipe.servings ? `Portioner: ${recipe.servings}` : ""].filter(Boolean);
+      document.getElementById("recipeMeta").textContent = metaBits.join(" · ");
+
+      renderList(document.getElementById("ingredientsList"), recipe.ingredients);
+      renderList(document.getElementById("methodList"), recipe.method);
+      const notesBlock = document.getElementById("notesBlock");
+      const notes = Array.isArray(recipe.notes) ? recipe.notes.filter(Boolean) : [];
+      renderList(document.getElementById("notesList"), notes);
+      notesBlock.hidden = notes.length === 0;
+
+      detail.hidden = false;
+    }
+
+    function showMissing(title, text) {
+      document.title = title;
+      missingTitle.textContent = title;
+      missingText.textContent = text;
+      missing.hidden = false;
+    }
+
+    async function loadRecipes() {
+      if (Array.isArray(window.__RECIPES__)) {
+        return window.__RECIPES__;
+      }
+
+      const response = await fetch("./data/recipes.json", { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load recipe data (${response.status})`);
+      }
+      return response.json();
+    }
+
+    async function init() {
+      if (!id) {
+        showMissing("Opskrift ikke fundet", "Opskrifts-id mangler i URL. Gå tilbage og vælg en opskrift.");
+        return;
+      }
+
+      try {
+        const recipes = await loadRecipes();
+        const recipe = recipes.find((item) => String(item.id) === String(id));
+        if (!recipe) {
+          showMissing("Opskriften blev ikke fundet", "Denne opskrift findes ikke endnu. Gå tilbage og vælg en anden opskrift.");
+          return;
+        }
+        renderRecipe(recipe);
+      } catch (error) {
+        console.error(error);
+        showMissing("Kunne ikke indlæse opskrift", "Der opstod en fejl ved indlæsning af data. Prøv igen senere.");
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
