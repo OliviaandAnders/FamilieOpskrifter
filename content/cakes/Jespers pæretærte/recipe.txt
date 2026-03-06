@@ -1,5 +1,5 @@
 ﻿TITLE: Jespers pæretærte
-DESCRIPTION: uhh en favorit ved Thuesens spisebord. Jesper er helt tosset med den her.
+DESCRIPTION: uhh endnu en favorit. Jesper er helt tosset med den her.
 SERVINGS: Tærteform
 TIME: 
 INGREDIENTS:
@@ -15,7 +15,7 @@ INGREDIENTS:
 Pensling - Vand
 Pynt - Sukker
 Tilbehør 
-¼ liter Piskefløde pisket til flødeskum eller Thuesen favorit creme fraice
+¼ liter Piskefløde pisket til flødeskum eller favoriten creme fraice
 
 
 
