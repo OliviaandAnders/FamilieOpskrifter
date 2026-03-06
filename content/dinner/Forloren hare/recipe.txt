@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿TITLE: Forloren hare
 DESCRIPTION: En klassiker, og I skal bestemt ikke snydes for den. Her får I derfor Birgits opskrift på forloren hare.
 SERVINGS: 
@@ -37,3 +38,44 @@ Dybfrys forloren hare ustegt i alufoliebakker.
 
 NOTER: 
 Birgit kan godt lide at putte lidt sødt i sovsen, som ribs gele eller brombærmarmelade
+=======
+﻿TITLE: Forloren hare
+DESCRIPTION: En klassiker, og I skal bestemt ikke snydes for den. Her får I derfor Birgits opskrift på forloren hare.
+SERVINGS: 
+TIME: 
+INGREDIENTS:
+100 g kogte kartofler
+250 g hakket svinekød
+250 g hakket oksekød
+1 æg
+½  skalotteløg
+ca. 2 tsk. salt
+¼ tsk. peber
+1 dl bouillon el. vand
+1 spsk. rasp
+6 tynde skiver bacon
+ca. 2 dl. bouillon
+Jævning:
+2 tsk. maizena
+1 spsk. vand.
+
+
+
+METHOD:
+Tænd ovnen og indstil den på 225.
+Mos kartoflerne med en gaffel. 
+Ælt kødet med æg, kartoffelmos, revet løg, krydderier, væske og rasp. 
+Smør et ildfast fad. 
+Form kødet som et brød. 
+Læg bacon over på skrå af hele "haren". 
+Sæt fadet på ovnristen midt i ovnen ved 225 i 15 min. 
+Hæld bouillon ved og dæmp varmen til 160 i ca. 30 min. 
+Dryp af og til med stegeskyen. 
+Hæld skyen fra haren 10 min. før den er færdig. Si den op i en kasserolle. Pisk jævning udrørt af maizena og vand i skyen. Kog sovsen igennem ved svag varme. Smag evt. til med gelé. 
+Skær "haren" for i ret tykke skiver. 
+Bag kartoflerne sammen med haren. 
+Dybfrys forloren hare ustegt i alufoliebakker. 
+
+NOTER: 
+Birgit kan godt lide at putte lidt sødt i sovsen, som ribs gele eller brombærmarmelade
+>>>>>>> 374ed05 (fjernet)

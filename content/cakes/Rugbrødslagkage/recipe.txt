@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿TITLE: prisvindende rugbrødslagkage 
 DESCRIPTION: Vinderkagen til vejfest! pers nummer 1 kage, uhh den er mums den her
 SERVINGS: 
@@ -24,3 +25,31 @@ METHOD:
  Pisk æggeblommerne lyse og skummende med sukker og vend revet rugbrød i. Sigt kakao, kartoffelmel og bagepulver sammen og vend det i æggene. Pisk hviderne stive og vend dem i dejen uden at røre luften ud.
 Fyld dejen i to store eller tre mindre, velsmurte lagkageforme og bag 25-30 min ved 170 grader på ovnens nederste ribbe for de store forme. 20-25 min. ved 190 grader for mindre forme. Vend forsigtigt kagebundene ud til afkøling på bagerist.
 Hæld mandarinerne i en sigte, så al væde løber fra. Pisk fløden stiv og vend reven eller hakket chokolade i halvdelen af flødeskummet- Læg kagebundene sammen med knap halvdelen af mandarinstykkerne og flødeskum med chokolade. Læg resten af flødeskummet over kagen og pynt med mandariner og chokoladekringler.
+=======
+﻿TITLE: prisvindende rugbrødslagkage 
+DESCRIPTION: Vinderkagen til vejfest! pers nummer 1 kage, uhh den er mums den her
+SERVINGS: 
+TIME: 
+INGREDIENTS:
+BUNDE:
+4 æg
+200 g sukker
+125 g mørkt rugbrød
+1 spsk. kakao
+1,5 tsk. bagepulver
+1-topspiseskefuld kartoffelmel
+FYLD OG PYNT:
+½ l  piskefløde
+100 g mørk chokolade
+1 ds. mandariner
+100 g chokoladekringler
+
+
+
+
+
+METHOD:
+ Pisk æggeblommerne lyse og skummende med sukker og vend revet rugbrød i. Sigt kakao, kartoffelmel og bagepulver sammen og vend det i æggene. Pisk hviderne stive og vend dem i dejen uden at røre luften ud.
+Fyld dejen i to store eller tre mindre, velsmurte lagkageforme og bag 25-30 min ved 170 grader på ovnens nederste ribbe for de store forme. 20-25 min. ved 190 grader for mindre forme. Vend forsigtigt kagebundene ud til afkøling på bagerist.
+Hæld mandarinerne i en sigte, så al væde løber fra. Pisk fløden stiv og vend reven eller hakket chokolade i halvdelen af flødeskummet- Læg kagebundene sammen med knap halvdelen af mandarinstykkerne og flødeskum med chokolade. Læg resten af flødeskummet over kagen og pynt med mandariner og chokoladekringler.
+>>>>>>> 374ed05 (fjernet)
