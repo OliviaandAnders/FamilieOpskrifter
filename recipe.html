@@ -78,7 +78,7 @@
       normalizedItems.forEach((item) => {
         const li = document.createElement("li");
         li.textContent = item;
-        if (/^(Tilbehør|Fyld|Dej\b.*|Basen|Remonce|Pynt|Bunde|Fyld og pynt|Jævning)$/i.test(item.trim())) {
+        if (/^(Tilbehør|Fyld|Dej\b.*|Basen|Remonce|Pynt|Bunde|Fyld og pynt|Jævning|Vendes i dejen)$/i.test(item.trim())) {
           li.className = "method-label";
         }
         listEl.appendChild(li);

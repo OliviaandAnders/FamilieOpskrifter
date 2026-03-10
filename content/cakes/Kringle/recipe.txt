@@ -1,9 +1,9 @@
 ﻿TITLE: Kringle
 DESCRIPTION: MORMOR KLASSIKER!!! Den skal prøves og skal altid kunne findes i fryseren
-SERVINGS: Tærteform
+SERVINGS: 
 TIME: 
 INGREDIENTS:
-Dej:
+Dej
 200g margarine
 2 dl mælk
 40g sukker
@@ -11,7 +11,7 @@ Dej:
 2 æg
 500g mel
 
-Remonce:
+Remonce
 75g margarine
 75g sukker
 1 spsk mel - For at undgå det løber

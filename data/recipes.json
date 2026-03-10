@@ -172,7 +172,7 @@
     "servings": "",
     "time": "",
     "ingredients": [
-      "Tærtedej",
+      "dej",
       "100 g hvedemel",
       "60 g sigtet rugmel",
       "40 g havregryn",
@@ -219,7 +219,7 @@
     "slug": "Paprikagryde",
     "category": "dinner",
     "title": "Paprika gryde med mørbrad og cocktailpølser",
-    "description": "En simpel, hurtig og lækker tærte. Jesper er verdensmester i tærter og her deler han en af hans favoritter.",
+    "description": "Ja tak!! Så er der serveret.",
     "servings": "",
     "time": "",
     "ingredients": [
@@ -400,7 +400,7 @@
     "slug": "Flødekarameller",
     "category": "desserts",
     "title": "Flødekarameller",
-    "description": "Beskrivelse mangler.",
+    "description": "Det rygtes at Torben, Jørgen og Birgit har spist spandevis af disse flødekarameller",
     "servings": "",
     "time": "",
     "ingredients": [
@@ -616,7 +616,7 @@
     "category": "cakes",
     "title": "Kiksekage",
     "description": "Uhh boy, den her er lækker. Den skal prøves!! Jørgen og Per er helt tosset med Mormors kiksekage.",
-    "servings": "Bradepande eller rugbrødsforme",
+    "servings": "Rugbrødsform eller beholder",
     "time": "",
     "ingredients": [
       "3 dl fløde",
@@ -641,41 +641,6 @@
     ],
     "image": "./content/cakes/Kiksekage/image.png",
     "source_txt": "./content/cakes/Kiksekage/recipe.txt"
-  },
-  {
-    "id": "cakes/Makronlinser muffins",
-    "slug": "Makronlinser muffins",
-    "category": "cakes",
-    "title": "Kiksekage",
-    "description": "Uhh boy, den her er lækker. Den skal prøves!! Jørgen og Per er helt tosset med mormors kiksekage.",
-    "servings": "14-15 stk muffinforme",
-    "time": "",
-    "ingredients": [
-      "Dej",
-      "3 æg",
-      "180g sukker",
-      "125 g knuste makroner",
-      "125 g mel",
-      "125 smeltet afkølet smør",
-      "1 ½ spsk mandelessens",
-      "1 ½ tsk bagepulver",
-      "Vendes i dejen",
-      "50g hakkede mandler",
-      "50g hakket chokolade",
-      "125g revet marcipan"
-    ],
-    "method": [
-      "Pisk æg og sukker",
-      "Bland makroner i.",
-      "Derefter det afkølede smør og essens blandes i.",
-      "Bland mel og bagepulver i .",
-      "Vend nødder, chokolade og revet marcipan i dejen. Dette step gør disse til mormors muffins.",
-      "Kommes i små muffin forme",
-      "Bages ved 190 grader normal ovn i 15 min."
-    ],
-    "notes": [],
-    "image": "./content/cakes/Makronlinser muffins/image.png",
-    "source_txt": "./content/cakes/Makronlinser muffins/recipe.txt"
   },
   {
     "id": "cakes/Kransekage",
@@ -707,17 +672,17 @@
     "category": "cakes",
     "title": "Kringle",
     "description": "MORMOR KLASSIKER!!! Den skal prøves og skal altid kunne findes i fryseren",
-    "servings": "Tærteform",
+    "servings": "",
     "time": "",
     "ingredients": [
-      "Dej:",
+      "Dej",
       "200g margarine",
       "2 dl mælk",
       "40g sukker",
       "40g gær",
       "2 æg",
       "500g mel",
-      "Remonce:",
+      "Remonce",
       "75g margarine",
       "75g sukker",
       "1 spsk mel - For at undgå det løber",
@@ -773,6 +738,41 @@
     "notes": [],
     "image": "./content/cakes/Lenes Marmorkage/image.jpg",
     "source_txt": "./content/cakes/Lenes Marmorkage/recipe.txt"
+  },
+  {
+    "id": "cakes/Makronlinser muffins",
+    "slug": "Makronlinser muffins",
+    "category": "cakes",
+    "title": "Makronlinser muffins",
+    "description": "SKAL ALTID kunne findes i fryseren, hvis børnebørn kommer på besøg.",
+    "servings": "14-15 stk muffinforme",
+    "time": "",
+    "ingredients": [
+      "Dej",
+      "3 æg",
+      "180g sukker",
+      "125 g knuste makroner",
+      "125 g mel",
+      "125 smeltet afkølet smør",
+      "1 ½ spsk mandelessens",
+      "1 ½ tsk bagepulver",
+      "Vendes i dejen",
+      "50g hakkede mandler",
+      "50g hakket chokolade",
+      "125g revet marcipan"
+    ],
+    "method": [
+      "Pisk æg og sukker",
+      "Bland makroner i.",
+      "Derefter det afkølede smør og essens blandes i.",
+      "Bland mel og bagepulver i .",
+      "Vend nødder, chokolade og revet marcipan i dejen. Dette step gør disse til mormors muffins.",
+      "Kommes i små muffin forme",
+      "Bages ved 190 grader normal ovn i 15 min."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Makronlinser muffins/image.png",
+    "source_txt": "./content/cakes/Makronlinser muffins/recipe.txt"
   },
   {
     "id": "cakes/Pebernødder",

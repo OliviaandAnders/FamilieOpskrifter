@@ -3,7 +3,7 @@ DESCRIPTION: En simpel, hurtig og lækker tærte. Jesper er verdensmester i tær
 SERVINGS: 
 TIME: 
 INGREDIENTS:
-Tærtedej
+dej
 100 g hvedemel
 60 g sigtet rugmel
 40 g havregryn
