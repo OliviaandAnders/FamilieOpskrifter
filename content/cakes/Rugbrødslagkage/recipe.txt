@@ -1,10 +1,10 @@
-﻿TITLE: prisvindende rugbrødslagkage 
-DESCRIPTION: Vinderkagen til vejfest! pers nummer 1 kage, uhh den er mums den her
+﻿TITLE: Prisvindende rugbrødslagkage 
+DESCRIPTION: Vinderkagen til vejfest! Pers nummer 1 kage, uhh den er mums den her
 SERVINGS: 
 TIME: 
 INGREDIENTS:
 
-Bunde:
+Bunde
 4 æg
 200 g sukker
 125 g mørkt rugbrød
