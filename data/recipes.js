@@ -142,7 +142,7 @@ window.__RECIPES__ = [
       "Smag til med salt og peber."
     ],
     "notes": [],
-    "image": "./content/dinner/Kalkun i valnøddesovs/image.jpg",
+    "image": "./content/dinner/Kalkun i valnøddesovs/image.png",
     "source_txt": "./content/dinner/Kalkun i valnøddesovs/recipe.txt"
   },
   {
@@ -570,7 +570,7 @@ window.__RECIPES__ = [
       "Det er ikke fast tid, 165 grader normal ovn.."
     ],
     "notes": [],
-    "image": "./content/cakes/Brunkager/image.jpg",
+    "image": "./content/cakes/Brunkager/image.png",
     "source_txt": "./content/cakes/Brunkager/recipe.txt"
   },
   {

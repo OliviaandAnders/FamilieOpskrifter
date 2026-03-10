@@ -10,6 +10,10 @@
   --shadow: 0 16px 40px rgba(48, 31, 14, 0.16);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +22,9 @@ body {
   margin: 0;
   font-family: "Manrope", "Segoe UI", sans-serif;
   color: var(--ink);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
   background:
     radial-gradient(circle at 10% 0%, #ffe9cf 0%, transparent 30%),
     radial-gradient(circle at 100% 5%, #f4d6c9 0%, transparent 34%),
@@ -69,6 +76,7 @@ h1 {
   font-family: "DM Serif Display", Georgia, serif;
   font-size: clamp(2.1rem, 4.5vw, 4rem);
   line-height: 1.02;
+  letter-spacing: -0.01em;
   max-width: 760px;
 }
 
@@ -77,17 +85,20 @@ h1 {
   max-width: 680px;
   color: var(--muted);
   font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.55;
 }
 
 .cta {
   display: inline-block;
   margin-top: 28px;
-  padding: 13px 20px;
+  padding: 13px 22px;
   border-radius: 999px;
   color: #fff;
-  background: var(--accent);
+  background: linear-gradient(135deg, #d4673e, #c05530);
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
   box-shadow: 0 8px 18px rgba(181, 70, 31, 0.33);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -135,6 +146,7 @@ h2 {
   margin: 0;
   font-family: "DM Serif Display", Georgia, serif;
   font-size: clamp(1.5rem, 2.6vw, 2.4rem);
+  letter-spacing: -0.01em;
 }
 
 .section-head p {
@@ -167,10 +179,19 @@ h2 {
   border: 1px solid rgba(95, 68, 45, 0.22);
   background: var(--surface);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 13px 16px;
   font: inherit;
   color: var(--ink);
   outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.control select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236d6052' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
 }
 
 .control input:focus,
@@ -187,7 +208,7 @@ h2 {
 
 .card {
   display: block;
-  background: var(--surface);
+  background: linear-gradient(160deg, #fffcf6 0%, #fdf7ee 100%);
   border-radius: var(--radius);
   text-decoration: none;
   color: inherit;
@@ -199,7 +220,7 @@ h2 {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 22px 40px rgba(42, 25, 10, 0.25);
+  box-shadow: 0 22px 48px rgba(42, 25, 10, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   border-color: var(--ring);
 }
 
@@ -209,6 +230,11 @@ h2 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #e4d7c8;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
 }
 
 .card span {
@@ -255,15 +281,29 @@ h2 {
 }
 
 .back-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 24px;
-  color: var(--ink);
+  color: var(--muted);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.back-link::before {
+  content: "←";
+  font-size: 1em;
+  transition: transform 0.2s ease;
 }
 
 .back-link:hover {
-  text-decoration: underline;
+  color: var(--ink);
+}
+
+.back-link:hover::before {
+  transform: translateX(-3px);
 }
 
 .recipe-layout {
@@ -284,9 +324,10 @@ h2 {
 .recipe-content {
   background: var(--surface);
   border: 1px solid rgba(95, 68, 45, 0.12);
+  border-top: 3px solid var(--accent);
   box-shadow: var(--shadow);
   border-radius: 20px;
-  padding: 28px;
+  padding: 32px 36px;
 }
 
 .detail-kicker {
