@@ -76,6 +76,125 @@
     "source_txt": "./content/dinner/Forloren hare/recipe.txt"
   },
   {
+    "id": "dinner/Gratin",
+    "slug": "Gratin",
+    "category": "dinner",
+    "title": "Gratin",
+    "description": "En perfekt ret til hvis man har rester i køleskabet eller små rester i fryseren man ønsker at få tømt ud i.",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "50 g margarine",
+      "65 g mel",
+      "3 dl mælk (mormor bruger vand opkog i stedet)",
+      "3-4 æg",
+      "Alle mulige grøntsager, kapers, skinke, bacon, kødrester, fisk alt kan puttes i. Rigtig god til rester i køleskabet."
+    ],
+    "method": [
+      "Blancher grøntsager",
+      "Æggehvider piskes til man kan vende dem.",
+      "Rør melet ud i en tyktbundet gryde med lidt vand. Rør jævningen klumpfri og tilsæt resten af væsken.",
+      "Bring det i kog og tilsæt fedtstoffet. Rør til det er smeltet.",
+      "Rør æggeblommer i en af gangen.",
+      "Smag med salt og peber",
+      "Vend fyldet og pisket hvider sammen",
+      "Gratin skålen skal smøres grundig ellers svær at gøre rent. Drys evt. med rasp det giver en god skorpe på gratinen.",
+      "Sæt i en kold ovn, Tænd på 165 grader. Når ovnen er varm startes 1 time."
+    ],
+    "notes": [
+      "Giv den lidt grill hvis der mangler farve på toppen."
+    ],
+    "image": "./content/dinner/Gratin/image.png",
+    "source_txt": "./content/dinner/Gratin/recipe.txt"
+  },
+  {
+    "id": "dinner/Kalkun i valnøddesovs",
+    "slug": "Kalkun i valnøddesovs",
+    "category": "dinner",
+    "title": "Kalkun i valnøddesovs",
+    "description": "En mormor klassiker, der ofte er blevet serveret i Hubsy og til konfektdag.",
+    "servings": "4 portioner",
+    "time": "",
+    "ingredients": [
+      "500 g kalkunkød/kyllinge i terninger",
+      "1 ½ spsk hvedemel",
+      "½ smuldrede timianblade",
+      "50g smør",
+      "citronskal fra ½ citron",
+      "6 letsnittede halvde valnøddekerner (mormor bruger flere)",
+      "1 tsk sukker",
+      "1 dl piskefløde",
+      "½ dl citronsaft",
+      "5 dl hønsebouillon",
+      "Tilbehør",
+      "Valgfri mængde ris eller paste - til du er mæt"
+    ],
+    "method": [
+      "Kom mel, krydderier og kalkunterninger i en plastic pose og ryst.",
+      "Brun dem i det varme smør. ( pas på de ikke koger  men i stedet stegt så de bliver brune)",
+      "Når alle terninger er brune tages de af panden.",
+      "Rør citronskal og nødder i fedtstoffet. Rist let",
+      "Hæld sukker og fløde i og lad simre i 2 min",
+      "Bland bouillon og citronsaft og rør det i.",
+      "Bring det i kog og jævn let med sovejævner.",
+      "Kom de brunede kødterninger i sovsen.",
+      "Lad den simre i 12-15 min.",
+      "Smag til med salt og peber."
+    ],
+    "notes": [],
+    "image": "./content/dinner/Kalkun i valnøddesovs/image.jpg",
+    "source_txt": "./content/dinner/Kalkun i valnøddesovs/recipe.txt"
+  },
+  {
+    "id": "dinner/Kalkungryde",
+    "slug": "Kalkungryde",
+    "category": "dinner",
+    "title": "Kalkungryde",
+    "description": "En mormor klassiker, der ofte er blevet serveret i Hubsy og til konfektdag.",
+    "servings": "4 portioner",
+    "time": "",
+    "ingredients": [
+      "4 stk kyllingebryst a 125g i skiver",
+      "Salt og peber",
+      "1 dl vand",
+      "2 dl fløde maks 9%",
+      "1 spsk hønsefond",
+      "6 solltørrede tomater i stykker (Mormor bruger flere)",
+      "½ tsk rosmarin",
+      "¼ tsk chiliflager",
+      "10 grønne oliven med peberfrugt i saltlage",
+      "5 firske basilikumblade",
+      "Tilbehør",
+      "Valgfri mængde ris eller paste - til du er mæt"
+    ],
+    "method": [
+      "Læg de tørrede tomater i blød i van i 20 min",
+      "varm olie op i en sauterpande.",
+      "Krydr kyllingekødet med salt og peber og brun dem på begge sider.",
+      "Skær i skiver efter lyst",
+      "Hæld vand, fløde og hønsefond til.",
+      "Tilsæt strimlede tomater, rosmarin, og chili flager og lad kyllingen simre under løg i ca. 15 min.",
+      "Tilsæt de siveskårne oliven og pynt med basilikum."
+    ],
+    "notes": [],
+    "image": "./content/dinner/Kalkungryde/image.png",
+    "source_txt": "./content/dinner/Kalkungryde/recipe.txt"
+  },
+  {
+    "id": "dinner/Kartoffelmos",
+    "slug": "Kartoffelmos",
+    "category": "dinner",
+    "title": "Kartoffelmos - Mormors metode",
+    "description": "Mormor bruger halv kartoffel og halv persillerod og/eller selleri.",
+    "servings": "",
+    "time": "",
+    "ingredients": [],
+    "method": [],
+    "notes": [],
+    "image": "./content/dinner/Kartoffelmos/image.png",
+    "source_txt": "./content/dinner/Kartoffelmos/recipe.txt"
+  },
+  {
     "id": "dinner/Lækker tærte fra Jesper",
     "slug": "Lækker tærte fra Jesper",
     "category": "dinner",
@@ -127,31 +246,260 @@
     "source_txt": "./content/dinner/Lækker tærte fra Jesper/recipe.txt"
   },
   {
-    "id": "desserts/test-chokolade-mousse",
-    "slug": "test-chokolade-mousse",
-    "category": "desserts",
-    "title": "Test Chokolade Mousse",
-    "description": "Let og luftig chokoladedessert med intens smag og cremet tekstur.",
-    "servings": "4",
-    "time": "20 min + 2 timer på køl",
+    "id": "dinner/Paprikagryde",
+    "slug": "Paprikagryde",
+    "category": "dinner",
+    "title": "Paprika gryde med mørbrad og cocktailpølser",
+    "description": "En simpel, hurtig og lækker tærte. Jesper er verdensmester i tærter og her deler han en af hans favoritter.",
+    "servings": "",
+    "time": "",
     "ingredients": [
-      "200 g mørk chokolade (70%)",
-      "3 æg, delt i blommer og hvider",
-      "2 spsk sukker",
-      "2 dl piskefløde",
-      "1 nip salt"
+      "50g bacon i tern",
+      "smør og olivenolie til stegning",
+      "750g svinemørdbrad",
+      "250g brune champignoer",
+      "1 løg",
+      "1 fed hvidløg",
+      "1 dåse hakkede tomater",
+      "2 tsk sød paprika",
+      "½ tsk røget paprika",
+      "2 dl kyllingefond",
+      "4 dl piskefløde",
+      "1 spsk konc tomatpure",
+      "1 spsk rørsukker",
+      "200g cocktailpølser",
+      "150g syltede perleløg",
+      "1 spsk frisk timian",
+      "Tilbehør",
+      "basmatiris",
+      "majskolber"
     ],
     "method": [
-      "Smelt chokoladen over vandbad og lad den køle let af.",
-      "Pisk æggeblommer i chokoladen til massen er glat.",
-      "Pisk fløden til let skum og vend den i chokoladen.",
-      "Pisk æggehvider med salt, tilsæt sukker og pisk til bløde toppe.",
-      "Vend æggehviderne forsigtigt i chokolademassen ad to omgange.",
-      "Fordel i glas og sæt på køl mindst 2 timer før servering."
+      "Steg bacon i smør og olie i en gryde, til den begynder at blive lidt sprød.",
+      "Skær mørbrad i 3 cm tykke skiver og brun dem i baconfedtet.",
+      "Tag mørbrad og bacon op af gryden.",
+      "Rens champignoer og skær dem i skiver.",
+      "Pil og hak løg + hvidløg.",
+      "Steg champignoner, løg og hvidløg i gryden til løgene har fået lidt farve.",
+      "Læg mørbrad og bacon tilbage i gryden, og tilsæt hakkede tomater, de 2 slags paprika, kyllingefond, fløde, tomatpure og rørsukker.",
+      "Lad saucen simre svagt i 20 minutter.",
+      "Tilsæt cocktailpølser og perleløg og lad det simre i 10-15 minutter.",
+      "Smag til med salt og peber, og drys med hakket timian."
+    ],
+    "notes": [
+      "Tips: Kød kan erstattes med kylling eller kalkun i stedet for.",
+      "Uhh endnu en klassiker i mormors køkken. En gryderet der varmer dejligt om vinteren og nem aftensmad fra fryseren. En Husby klassiker"
+    ],
+    "image": "./content/dinner/Paprikagryde/image.png",
+    "source_txt": "./content/dinner/Paprikagryde/recipe.txt"
+  },
+  {
+    "id": "dinner/Svensk pølseret",
+    "slug": "Svensk pølseret",
+    "category": "dinner",
+    "title": "Svensk pølseret",
+    "description": "Ja, den skal da være med i denne opskriftsbog. Her får du mormors svenske pølseret",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "2 dl finthakket løg (Mormor kan li 3 dl løg)",
+      "30g smør/margarine",
+      "6-8 knækpølser el. grillpølser",
+      "½ tsk mild paprika",
+      "¾ kg kogte, kolde pillekartofler",
+      "1 ½ - 2 dl mælk",
+      "1 lille ds koncentreret tomatpure",
+      "salt, friskkværnet peber",
+      "½ - 1 dl fløde",
+      "1 bdt. purløg",
+      "1 spsk dijon sennep"
+    ],
+    "method": [
+      "Pil løgene og hak dem",
+      "skær pølserne i skrå skiver.",
+      "Skær kartoflerne i skiver",
+      "Brun fedtstoffet let i en tykbudet gryde.",
+      "Svits løgene til de er klare og gyldne",
+      "Tilsæt pølser og paprika, svits det med.",
+      "Dæmp varmen og tilsæt kartoffelskiver, tomatpure og mælk i gryden.",
+      "Bland alt",
+      "Tilsæt salt og peber",
+      "Lad retten småkoge 5 min.",
+      "Tilsæt fløde og kog igen retten 5 min.",
+      "Smat til med ketchup, suppler med en skvat mælk hvis den bliver for tør.",
+      "Drys purløg over retten."
     ],
     "notes": [],
-    "image": "./content/desserts/test-chokolade-mousse/image.png",
-    "source_txt": "./content/desserts/test-chokolade-mousse/recipe.txt"
+    "image": "./content/dinner/Svensk pølseret/image.png",
+    "source_txt": "./content/dinner/Svensk pølseret/recipe.txt"
+  },
+  {
+    "id": "dinner/Sovsen til det hele",
+    "slug": "Sovsen til det hele",
+    "category": "dinner",
+    "title": "Æbleflæsk",
+    "description": "Kan bruges til alt og mormor har altid en portion i fryseren. Sovs til dine bøffer, kylling, fisk eller frikadeller",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "1 løg",
+      "2 persillerødder",
+      "2 dl rødvin",
+      "1 ds flåede tomater",
+      "1 bouillonterning",
+      "lidt tørret timian",
+      "1 dl piskefløde"
+    ],
+    "method": [
+      "hak løgene",
+      "Svits hakkede løg i olie i en gryde. Skær persillerødderne i tern og svits dem med i olien. Ingen af delene må ændre farve. De skal blot være klare og blanke.",
+      "Sovsen skal have syre! 😁 Hæld 2 dl af en rest rødvin over de svitsede grøntsager i gryden. Eller bland 1 spsk vineddike i 2 dl vand og hæld over.",
+      "Det hele simrer nu i 5 minutter.",
+      "Hæld flåede tomater i gryden og tilsæt 3 dl vand, 1 dl piskefløde, 1 bouillonterning og lidt timian.",
+      "Lad sovsen simre i 10 minutter, så er grøntsagerne møre.",
+      "Nu skal grøntsagerne blendes. Det er nemt med en stavblender, så sovsen kan blive i gryden.",
+      "Kom lidt ekstra vand i, hvis sovsen er for tyk.",
+      "Smag til med salt, peber og riv lidt hvidløg i hvis du har lyst."
+    ],
+    "notes": [],
+    "image": "./content/dinner/Sovsen til det hele/image.png",
+    "source_txt": "./content/dinner/Sovsen til det hele/recipe.txt"
+  },
+  {
+    "id": "dinner/Æbleflæsk",
+    "slug": "Æbleflæsk",
+    "category": "dinner",
+    "title": "Æbleflæsk",
+    "description": "En gammel dansk klassiker der tit er at finde på familiens spisebord.",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "250-300g bacontern",
+      "Æbler (efter behov/lyst)",
+      "Sukker",
+      "Rundom rugbrød",
+      "Birgit putter dadler i"
+    ],
+    "method": [
+      "Rist bacontern til sprøde",
+      "Skær rå æbler i stykker/skiver og fjern stilkehus",
+      "Steg æbler (+dadler) med bacon til æblerne er kogt ud og er bløde",
+      "Smag til med sukker efter behov..",
+      "Server på et rundom rugbrød"
+    ],
+    "notes": [],
+    "image": "./content/dinner/Æbleflæsk/image.png",
+    "source_txt": "./content/dinner/Æbleflæsk/recipe.txt"
+  },
+  {
+    "id": "desserts/Blinis",
+    "slug": "Blinis",
+    "category": "desserts",
+    "title": "Blinis",
+    "description": "Mormors blinis kan bruges som dessert eller til forret.",
+    "servings": "ca. 40 stk.",
+    "time": "",
+    "ingredients": [
+      "6 dl mælk",
+      "25g gær",
+      "270g hvedemel",
+      "90 g grahamsmel",
+      "1 tsk salt",
+      "3 æggeblommer",
+      "3 æggehvider",
+      "30g smeltet margarine",
+      "ca. 70g margarine til stegning"
+    ],
+    "method": [
+      "Mælken lunes og gæren udrøres heri",
+      "hvedemel, grahamsmel, salt og æggeblommer tilsættes og dejen røres godt igennem.",
+      "Stilles til hævning et lunt sted ca. 1 time.",
+      "Æggehviderne piskes stive og vendes i sammen med margarinen.",
+      "Blinierne steget i lidt margarine på panden.",
+      "der beregnes ca. ½ dl dej pr. blini."
+    ],
+    "notes": [
+      "De kan fryses og lunes i ovn.",
+      "Forslag til fyld Rødløg, bladselleri, rejer, laks, fetaost, radisser, skinke, peperfrugt, udbkødt soltørrede tomater. Purlæg, hakkede æg, agurker, rødbeder og kapers. Fantasien sætter grænen.",
+      "Som dessert: is, marmelade, frugt."
+    ],
+    "image": "./content/desserts/Blinis/image.png",
+    "source_txt": "./content/desserts/Blinis/recipe.txt"
+  },
+  {
+    "id": "desserts/Flødekarameller",
+    "slug": "Flødekarameller",
+    "category": "desserts",
+    "title": "Flødekarameller",
+    "description": "Beskrivelse mangler.",
+    "servings": "TIME:",
+    "time": "",
+    "ingredients": [
+      "500 g sirup",
+      "325 g sukker",
+      "½ l fløde",
+      "150 g smør",
+      "1 kniv vanille",
+      "2 spsk kakao",
+      "1 spsk nescaffe"
+    ],
+    "method": [
+      "Sirup, sukker og ⅔ af fløden bringes i kog under omrøring.",
+      "Resten af fløden og smørret tilsættes i små klatter uden gryden går af kog. Koges ca. ½ -3/4 time til man kan se bunden af gryden når man rører.",
+      "Vanille og kakao og nescafe tilsættes.",
+      "Karamellen hældes op på plade som er godt smurt.",
+      "Skæres ud og pakkes ind (Stivner ret hurtigt)",
+      "Hvis det koger for stærkt brankes karamellen."
+    ],
+    "notes": [
+      "Hvis for tynd, kog igennem igen.",
+      "Pakkes ind i mellemlags papir."
+    ],
+    "image": "./content/desserts/Flødekarameller/image.png",
+    "source_txt": "./content/desserts/Flødekarameller/recipe.txt"
+  },
+  {
+    "id": "desserts/Jespers berømte risalamande",
+    "slug": "Jespers berømte risalamande",
+    "category": "desserts",
+    "title": "Jespers berømte risalamande",
+    "description": "Nu er det jul igen og nu er det jul igen og risalamande fra Jesper",
+    "servings": "10 portioner",
+    "time": "",
+    "ingredients": [
+      "Ris 240g",
+      "Vand 50g",
+      "Sødmælk: 1450",
+      "Vaniljestang: 1.5 -2 vaniljestænger",
+      "Ristede hasselnødder: 35g",
+      "Ristede smuttede mandler: 15g",
+      "Smuttede mandler 110g",
+      "Flormelis 120g",
+      "Fløde 500g"
+    ],
+    "method": [
+      "Tænd ovnen på 185 grader varmluft.",
+      "Skyl risene.",
+      "Fjern kornene fra vaniljestængerne.",
+      "Bring vand, sødmælk og ris, vaniljekorn og tomme vaniljestænger i kog.",
+      "Put låg på og stil i ovnen 10 min.",
+      "Efter 10 min slukkes ovnen og lad grøden stå yderligere 25-35min. Grøden skal gerne stadig være våd, når tiden er gået.",
+      "Tag grøden ud, rør rundt et par gange og drys et tyndt lag sukker på toppen. Dette sikre, at det øverste lag ikke danner hinde.",
+      "Lad grøden køle helt af - gerne til dagen efter.",
+      "Fjern de tomme vaniljestænger fra grøden.",
+      "Hak nødderne og bland dem i grøden.",
+      "Si flormelis i grøden. Brug det meste men gem lidt til at smage efter med.",
+      "Pisk en let flødeskum.",
+      "Tag en lille portion af flødeskummen og bland i grøden.",
+      "Vend nu resten af flødeskummen i.",
+      "Smag efter med flormelis indtil den ønskede sødme er opnået.",
+      "Lad gerne grøden stå lidt inden servering."
+    ],
+    "notes": [
+      "Server gerne med en syrlig kirsebærsovs med højt indhold af kirsebær."
+    ],
+    "image": "./content/desserts/Jespers berømte risalamande/image.png",
+    "source_txt": "./content/desserts/Jespers berømte risalamande/recipe.txt"
   },
   {
     "id": "cakes/Birgits brunsviger",
