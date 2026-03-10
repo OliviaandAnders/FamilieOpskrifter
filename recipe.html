@@ -64,9 +64,9 @@
 
     function toLabel(category) {
       const map = {
-        dinner: "Dinner",
-        desserts: "Desserts",
-        cakes: "Cakes",
+        dinner: "Aftensmad",
+        desserts: "Dessert",
+        cakes: "Kager",
         uncategorized: "Uncategorized"
       };
       return map[category] || category;
@@ -78,6 +78,9 @@
       normalizedItems.forEach((item) => {
         const li = document.createElement("li");
         li.textContent = item;
+        if (/^(Tilbehør|Fyld|Dej\b.*|Basen|Remonce|Pynt|Bunde|Fyld og pynt|Jævning)$/i.test(item.trim())) {
+          li.className = "method-label";
+        }
         listEl.appendChild(li);
       });
     }

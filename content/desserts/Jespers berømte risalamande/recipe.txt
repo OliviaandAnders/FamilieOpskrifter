@@ -1,6 +1,6 @@
 ﻿TITLE: Jespers berømte risalamande
 DESCRIPTION: Nu er det jul igen og nu er det jul igen og risalamande fra Jesper
-SERVINGS: 10 portioner
+SERVINGS: 10
 TIME: 
 INGREDIENTS:
 

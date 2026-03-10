@@ -1,5 +1,5 @@
-﻿TITLE: Æbleflæsk
-DESCRIPTION:Kan bruges til alt og mormor har altid en portion i fryseren. Sovs til dine bøffer, kylling, fisk eller frikadeller
+﻿TITLE: Sovsen til det hele
+DESCRIPTION: Kan bruges til alt og mormor har altid en portion i fryseren. Sovs til dine bøffer, kylling, fisk eller frikadeller
 
 SERVINGS: 
 TIME: 

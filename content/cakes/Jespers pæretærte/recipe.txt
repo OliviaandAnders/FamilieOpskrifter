@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿TITLE: Jespers pæretærte
 DESCRIPTION: uhh endnu en favorit. Jesper er helt tosset med den her.
 SERVINGS: Tærteform
@@ -29,37 +28,3 @@ Læg den anden plade dej over pærerne og tryk godt til i kanten.
 Pensl med koldt vand og drys med lidt sukker. Bag pæretærten midt i ovnen i ca. 40 min. ved 200° - traditionel ovn.
 
 Server den lune pæretærte med iskoldt flødeskum eller creme fraice. Mums! 
-
-=======
-﻿TITLE: Jespers pæretærte
-DESCRIPTION: uhh endnu en favorit. Jesper er helt tosset med den her.
-SERVINGS: Tærteform
-TIME: 
-INGREDIENTS:
-150 g Smør
-240 g Hvedemel (ca. 4 dl)
-125 g Sukker (ca. 1½ dl)
-1 tsk Vaniljesukker
-½ tsk Stødt ingefær
-1 Æg
-1 spsk Vand
-4 Pærer (ca. 600 g)
-
-Pensling - Vand
-Pynt - Sukker
-Tilbehør 
-¼ liter Piskefløde pisket til flødeskum eller favoriten creme fraice
-
-
-
-
-METHOD:
-Skær smørret i mindre stykker og smuldr det i melet. Bland sukker, vaniljesukker og ingefær i. Saml hurtigt dejen med æg og vand. Læg dejen koldt i ca. 1 time.
-Smør en tærteform eller springform (ca. 23 cm i diameter). Del dejen i 2 portioner og rul hver portion ud til en rund plade, der er lidt større end formen. Læg den ene dejplade i formens bund og pres dejen op langs kanten.
-Skræl pærerne og flæk dem. Tag kernehuset ud og læg de halve pærer i formen med den buede side opad og med stilkenden mod midten.
-Læg den anden plade dej over pærerne og tryk godt til i kanten.
-Pensl med koldt vand og drys med lidt sukker. Bag pæretærten midt i ovnen i ca. 40 min. ved 200° - traditionel ovn.
-
-Server den lune pæretærte med iskoldt flødeskum eller creme fraice. Mums! 
-
->>>>>>> 374ed05 (fjernet)

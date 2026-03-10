@@ -374,6 +374,41 @@ h2 {
   gap: 8px;
 }
 
+.detail-block ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: method-counter;
+}
+
+.detail-block ol li {
+  counter-increment: method-counter;
+  padding-left: 28px;
+  position: relative;
+}
+
+.detail-block ol li::before {
+  content: counter(method-counter) ".";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.88rem;
+  top: 0.15em;
+}
+
+.method-label {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: 700;
+  margin-top: 6px;
+  counter-increment: none;
+}
+
+.method-label::before {
+  display: none;
+}
+
 .recipe-missing {
   background: var(--surface);
   border: 1px solid rgba(95, 68, 45, 0.12);
