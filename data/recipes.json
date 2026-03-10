@@ -189,6 +189,76 @@
     "source_txt": "./content/cakes/Birgits brunsviger/recipe.txt"
   },
   {
+    "id": "cakes/Brunkager",
+    "slug": "Brunkager",
+    "category": "cakes",
+    "title": "Brunkager",
+    "description": "Hvis man ikke har fået nok brunkager med hjem efter konfektdag, kan man her gå i kast med dem selv. Den legendariske brunsviger opskrift.",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "250g margarine",
+      "250g smør",
+      "500g sukker",
+      "250g sirup (1,75 dl)",
+      "15g potaske",
+      "1 spsk kakao",
+      "125g mandler (Mormor bruger hakkede nødder i stedet for mandler)",
+      "7g stødt nellike",
+      "25g kanel",
+      "1 kg mel",
+      "1 dl appelsinsaft",
+      "appelsinskal af 1 appelsin",
+      "Stor portion - halv portion kan være passende."
+    ],
+    "method": [
+      "Margarine, smør, sukker og sirup smeltes i en gryde.",
+      "Krydderierne, potaske, appelsinsaft og appelsinskræl kommes i når det er afkølet en smule.",
+      "Melet kommes i massens mens massen stadig er lun men ikke for varm. Den klumper hvis for kold.",
+      "Det hele skal røres godt sammen.",
+      "Massen er ret flydende men bliver mere fast når kold.",
+      "Når dejen er kold rulles i 4 pølser og stilles i køleskabet natten over. (Gøre det nemmere at skære ud).",
+      "Pølserne skæres i tynde skiver og bages til de er gennembagte og sprøde.",
+      "Det er ikke fast tid, 165 grader normal ovn.."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Brunkager/image.jpg",
+    "source_txt": "./content/cakes/Brunkager/recipe.txt"
+  },
+  {
+    "id": "cakes/Galop kringle",
+    "slug": "Galop kringle",
+    "category": "cakes",
+    "title": "Galop kringle",
+    "description": "Når det skal gå stærkt og trangen til kringle er høj, så er det galop kringle tid 😁",
+    "servings": "Passer til 1 bradepande",
+    "time": "",
+    "ingredients": [
+      "1 kg mel",
+      "250 g marganine",
+      "200 g sukker",
+      "2 æg",
+      "5 dl mælk",
+      "7 tsk bagepulver",
+      "evt. æblestykker i dejen eller et lag ovenpå",
+      "Drysses med sukker"
+    ],
+    "method": [
+      "Bland alle tørdelene.",
+      "Pisk æg, mælk og blødgjort margarine sammen.",
+      "Bland med tørdelene.",
+      "Æblestykkerne kommes i dejen efter lyst.. (æbler sørger for at holde dejen fugtig.",
+      "Put i bradepande,. drys med sukker evt. æbleskiver ovenpå.",
+      "Bages 200 grader normal ovn i ca. 25 min.",
+      "NOTES:",
+      "Hedder Gakop kringle pga. den er så hurtig.",
+      "Kan opbevares i fryseren og tøes op i ovnen efter behov"
+    ],
+    "notes": [],
+    "image": "./content/cakes/Galop kringle/image.png",
+    "source_txt": "./content/cakes/Galop kringle/recipe.txt"
+  },
+  {
     "id": "cakes/Jespers pæretærte",
     "slug": "Jespers pæretærte",
     "category": "cakes",
@@ -244,6 +314,199 @@
     "source_txt": "./content/cakes/Jespers pæretærte/recipe.txt"
   },
   {
+    "id": "cakes/Kiksekage",
+    "slug": "Kiksekage",
+    "category": "cakes",
+    "title": "Kiksekage",
+    "description": "Uhh boy, den her er lækker. Den skal prøves!! Jørgen og Per er helt tosset med mormors kiksekage.",
+    "servings": "Bradepande eller rugbrødsforme",
+    "time": "",
+    "ingredients": [
+      "3 dl fløde",
+      "100g flormelis",
+      "300 g mørkt hakket chokolade",
+      "100 g smær",
+      "1 pk. firkantet vaniljekiks fra Karen Wolf"
+    ],
+    "method": [
+      "Fløde og flormelis blandes og varmes op til kogepunktet",
+      "Hældes over chokolade.",
+      "Smør tilsættes lidt ad gangen og røres godt sammen.",
+      "Rugbrødsform beklædt med bagepapir.",
+      "Nu laves lag.",
+      "Start med kiks - dej - kiks - dej til brugt.",
+      "Pynt med lidt hakkede nødder.",
+      "Opbevares i fryseren",
+      "NOTES:",
+      "Man kan altid have en ligggende i fryseren.",
+      "Spises fra fryseren, God kniv - Skær ud i skiver."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Kiksekage/image.png",
+    "source_txt": "./content/cakes/Kiksekage/recipe.txt"
+  },
+  {
+    "id": "cakes/Makronlinser muffins",
+    "slug": "Makronlinser muffins",
+    "category": "cakes",
+    "title": "Kiksekage",
+    "description": "Uhh boy, den her er lækker. Den skal prøves!! Jørgen og Per er helt tosset med mormors kiksekage.",
+    "servings": "14-15 stk muffinforme",
+    "time": "",
+    "ingredients": [
+      "Dej",
+      "3 æg",
+      "180g sukker",
+      "125 g knuste makroner",
+      "125 g mel",
+      "125 smeltet afkølet smør",
+      "1 ½ spsk mandelessens",
+      "1 ½ tsk bagepulver",
+      "Vendes i dejen",
+      "50g hakkede mandler",
+      "50g hakket chokolade",
+      "125g revet marcipan"
+    ],
+    "method": [
+      "Pisk æg og sukker",
+      "Bland makroner i.",
+      "Derefter det afkølede smør og essens blandes i.",
+      "Bland mel og bagepulver i .",
+      "Vend nødder, chokolade og revet marcipan i dejen. Dette step gør disse til mormors muffins.",
+      "Kommes i små muffin forme",
+      "Bages ved 190 grader normal ovn i 15 min."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Makronlinser muffins/image.png",
+    "source_txt": "./content/cakes/Makronlinser muffins/recipe.txt"
+  },
+  {
+    "id": "cakes/Kransekage",
+    "slug": "Kransekage",
+    "category": "cakes",
+    "title": "Kransekage",
+    "description": "Perfekt til de særlige begivenheder eller nytår.",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "1 kg kransekage masse for høj kransekage (Ellers ren rå marcipan - kan ikke holde hvis høj kransekage)",
+      "300 g sukker",
+      "2-3 æggehvider pasteuriseret"
+    ],
+    "method": [
+      "Det hele æltes sammen og trilles i lange tynde pølser.",
+      "Følg skabelon hvis bruges til høj kransekage.",
+      "200 grader normal ovn øverst i ovnen til de er lysebrune 10-15 min ca..",
+      "De bliver meget let mørke i bunden, kan hjælpe at lægge en bradepande i bunden af ovnen",
+      "Pynt med glasur."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Kransekage/image.png",
+    "source_txt": "./content/cakes/Kransekage/recipe.txt"
+  },
+  {
+    "id": "cakes/Kringle",
+    "slug": "Kringle",
+    "category": "cakes",
+    "title": "Kringle",
+    "description": "MORMOR KLASSIKER!!! Den skal prøves og skal altid kunne findes i fryseren",
+    "servings": "Tærteform",
+    "time": "",
+    "ingredients": [
+      "Dej:",
+      "200g margarine",
+      "2 dl mælk",
+      "40g sukker",
+      "40g gær",
+      "2 æg",
+      "500g mel",
+      "Remonce:",
+      "75g margarine",
+      "75g sukker",
+      "1 spsk mel - For at undgå det løber",
+      "Fyld",
+      "10-12 Knuste makroner",
+      "Marcipan efter behov (skal rives)",
+      "4 skrællede æbler og skåret i tynde skiver.",
+      "Pynt",
+      "æg til pensling",
+      "Nøddeflager og sukker"
+    ],
+    "method": [
+      "Margarine smeltes",
+      "Den kolde mælk tilsættes.",
+      "Gæren røres ud i blandingen.",
+      "Sukker og æg tilsættes.",
+      "melet æltes i.",
+      "Dejen rulles ud i 2 rektangulære stykker.",
+      "Remonce smøres ud i midten på begge stykker.",
+      "10-12 knuste makroner fordeles over remoncen på de 2 stykker.",
+      "4 æbler skrælles og skæres i tynde skiver og fordeles over remoncen.",
+      "Der sluttes af med at rive ren rå marcipan henover efter behov.",
+      "Kringlen foldes sammen henover remoncen.",
+      "Hæve ca. 30 min.",
+      "Pensles med æg og drysses med nøddeflager og sukker.",
+      "Bages ved 190 g i normal ovn i 20 min ca."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Kringle/image.png",
+    "source_txt": "./content/cakes/Kringle/recipe.txt"
+  },
+  {
+    "id": "cakes/Lenes Marmorkage",
+    "slug": "Lenes Marmorkage",
+    "category": "cakes",
+    "title": "Lenes Marmorkage",
+    "description": "Denne kage er en, du simpelthen ikke må gå glip af – en ægte klassiker og en favorit blandt Lenes familie.",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "125 g margarine/smør",
+      "250 g sukker",
+      "3 æg",
+      "250 g mel",
+      "1 ½ del mælk",
+      "1 ½ tsk bagepulver",
+      "1 lille spsk kakao"
+    ],
+    "method": [
+      "Mix margarine og sukker godt sammen. Herefter mix æg og pisk. Sigt mel og bagepulver i samt mælk lidt ad gangen. Tilføj den ene halvdel af dejen til en rugbrødsform. Den anden halvdel tilføjes kakaoen, og herefter tilføjes den til rugbrødsformen. Tag en pind og mix lidt rundt i dejen.",
+      "Put i ovnen ved 175-200 grader i ca. 1 time."
+    ],
+    "notes": [],
+    "image": "./content/cakes/Lenes Marmorkage/image.jpg",
+    "source_txt": "./content/cakes/Lenes Marmorkage/recipe.txt"
+  },
+  {
+    "id": "cakes/Pebernødder",
+    "slug": "Pebernødder",
+    "category": "cakes",
+    "title": "Pebernødder",
+    "description": "En juleklassiker fra Mormor",
+    "servings": "",
+    "time": "",
+    "ingredients": [
+      "1 kg mel",
+      "200 g margarine",
+      "400 g flormelis",
+      "2 spsk honning",
+      "1 tsk allehånde",
+      "3 tsk kanel",
+      "½ tsk hjortesalt",
+      "1 æg",
+      "Vand så meget dejen kan tage."
+    ],
+    "method": [
+      "Det hele blandes og æltes godt sammen.",
+      "Trilles til tynde pølser 1 1/2 cm diameter der skæres ud i 1 cm stykker. Hvis for tykke bliver de ikke gennembagt i midten før de bliver for hårde.",
+      "Velegnet dej til at lave figurer af.",
+      "Varmluftsovn 140 grader"
+    ],
+    "notes": [],
+    "image": "./content/cakes/Pebernødder/image.png",
+    "source_txt": "./content/cakes/Pebernødder/recipe.txt"
+  },
+  {
     "id": "cakes/Rugbrødslagkage",
     "slug": "Rugbrødslagkage",
     "category": "cakes",
@@ -291,5 +554,34 @@
     "notes": [],
     "image": "./content/cakes/Rugbrødslagkage/image.png",
     "source_txt": "./content/cakes/Rugbrødslagkage/recipe.txt"
+  },
+  {
+    "id": "cakes/Sirupskage",
+    "slug": "Sirupskage",
+    "category": "cakes",
+    "title": "Sirupskage",
+    "description": "Beskrivelse mangler.",
+    "servings": "Bradepande eller rugbrødsforme",
+    "time": "",
+    "ingredients": [
+      "1 kg hvedemel",
+      "500g sirup",
+      "500 g sukker",
+      "125 g margarine",
+      "¾ l kærnemælk",
+      "1 tsk ingefær",
+      "2 tsk kanel",
+      "2 tsk Natron",
+      "1 tsk nelliker",
+      "200-250 g rosiner"
+    ],
+    "method": [
+      "Sirup, sukker og margarine smeltes i en gryde.",
+      "Når det er koldt blandes resten i og røres godt.",
+      "Bages ved svag varme 150 grader i normal ovn ca. 1 time"
+    ],
+    "notes": [],
+    "image": "./content/cakes/Sirupskage/image.png",
+    "source_txt": "./content/cakes/Sirupskage/recipe.txt"
   }
 ]
