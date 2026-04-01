@@ -85,7 +85,7 @@
     "servings": "4 portioner",
     "time": "",
     "ingredients": [
-      "500 g kalkunkød/kyllinge i terninger",
+      "500 g kalkunkød/kylling i terninger",
       "1 ½ spsk hvedemel",
       "½ smuldrede timianblade",
       "50g smør",
@@ -123,24 +123,24 @@
     "servings": "4 portioner",
     "time": "",
     "ingredients": [
-      "4 stk kyllingebryst a 125g i skiver",
+      "4 stk kyllingebryst a 125g",
       "Salt og peber",
       "1 dl vand",
       "2 dl fløde maks 9%",
       "1 spsk hønsefond",
-      "6 solltørrede tomater i stykker (Mormor bruger flere)",
+      "6 solltørrede tomater (Mormor bruger flere)",
       "½ tsk rosmarin",
       "¼ tsk chiliflager",
       "10 grønne oliven med peberfrugt i saltlage",
-      "5 firske basilikumblade",
+      "5 friske basilikumblade",
       "Tilbehør",
-      "Valgfri mængde ris eller paste - til du er mæt"
+      "Valgfri mængde ris eller pasta - til du er mæt"
     ],
     "method": [
-      "Læg de tørrede tomater i blød i van i 20 min",
+      "Læg de tørrede tomater i blød i vand i 20 min og skær dem i strimler",
       "varm olie op i en sauterpande.",
       "Krydr kyllingekødet med salt og peber og brun dem på begge sider.",
-      "Skær i skiver efter lyst",
+      "Skær kødet i skiver eller tern efter eget ønske.",
       "Hæld vand, fløde og hønsefond til.",
       "Tilsæt strimlede tomater, rosmarin, og chili flager og lad kyllingen simre under løg i ca. 15 min.",
       "Tilsæt de siveskårne oliven og pynt med basilikum."
@@ -226,7 +226,7 @@
       "50g bacon i tern",
       "smør og olivenolie til stegning",
       "750g svinemørdbrad",
-      "250g brune champignoer",
+      "250g brune eller almindelige champignoner",
       "1 løg",
       "1 fed hvidløg",
       "1 dåse hakkede tomater",
@@ -235,7 +235,7 @@
       "2 dl kyllingefond",
       "4 dl piskefløde",
       "1 spsk konc tomatpure",
-      "1 spsk rørsukker",
+      "1 spsk rørsukker eller almindelige sukker",
       "200g cocktailpølser",
       "150g syltede perleløg",
       "1 spsk frisk timian",
@@ -327,7 +327,7 @@
       "Tilsæt salt og peber",
       "Lad retten småkoge 5 min.",
       "Tilsæt fløde og kog igen retten 5 min.",
-      "Smat til med ketchup, suppler med en skvat mælk hvis den bliver for tør.",
+      "Smag til med ketchup, suppler med en skvat mælk eller fløde hvis den bliver for tør.",
       "Drys purløg over retten."
     ],
     "notes": [],
@@ -384,13 +384,14 @@
       "hvedemel, grahamsmel, salt og æggeblommer tilsættes og dejen røres godt igennem.",
       "Stilles til hævning et lunt sted ca. 1 time.",
       "Æggehviderne piskes stive og vendes i sammen med margarinen.",
-      "Blinierne steget i lidt margarine på panden.",
+      "Blinierne steges i en blinipande, men kan også steges i små klatter på en almindelig pande.",
       "der beregnes ca. ½ dl dej pr. blini."
     ],
     "notes": [
       "De kan fryses og lunes i ovn.",
       "Forslag til fyld Rødløg, bladselleri, rejer, laks, fetaost, radisser, skinke, peperfrugt, udbkødt soltørrede tomater. Purlæg, hakkede æg, agurker, rødbeder og kapers. Fantasien sætter grænen.",
-      "Som dessert: is, marmelade, frugt."
+      "Som dessert: is, marmelade, frugt.",
+      "Fantasien sætter ingen grænser."
     ],
     "image": "./content/desserts/Blinis/image.png",
     "source_txt": "./content/desserts/Blinis/recipe.txt"
@@ -414,7 +415,7 @@
     ],
     "method": [
       "Sirup, sukker og ⅔ af fløden bringes i kog under omrøring.",
-      "Resten af fløden og smørret tilsættes i små klatter uden gryden går af kog. Koges ca. ½ -3/4 time til man kan se bunden af gryden når man rører.",
+      "Resten af fløden og smørret tilsættes i små klatter uden gryden går af kog. Koges ca. ½ -3/4 time under konstant omrøring og til man kan se bunden af gryden når man rører.",
       "Vanille og kakao og nescafe tilsættes.",
       "Karamellen hældes op på plade som er godt smurt.",
       "Skæres ud og pakkes ind (Stivner ret hurtigt)",
@@ -530,9 +531,9 @@
     "method": [
       "Margarine, smør, sukker og sirup smeltes i en gryde.",
       "Krydderierne, potaske, appelsinsaft og appelsinskræl kommes i når det er afkølet en smule.",
-      "Melet kommes i massens mens massen stadig er lun men ikke for varm. Den klumper hvis for kold.",
+      "Melet kommes i massens mens massen stadig er lun men ikke for varm. Masses smuldrer hvis dejen er for kold.",
       "Det hele skal røres godt sammen.",
-      "Massen er ret flydende men bliver mere fast når kold.",
+      "Massen er ret flydende men bliver mere fast når den er kold.",
       "Når dejen er kold rulles i 4 pølser og stilles i køleskabet natten over. (Gøre det nemmere at skære ud).",
       "Pølserne skæres i tynde skiver og bages til de er gennembagte og sprøde.",
       "Det er ikke fast tid, 165 grader normal ovn."
@@ -558,7 +559,7 @@
       "2 æg",
       "5 dl mælk",
       "7 tsk bagepulver",
-      "evt. æblestykker i dejen eller et lag ovenpå",
+      "Æblestykker i dejen og et lag tyndskårne æblebåde oven på dejen, mængde efter eget ønske",
       "Drysses med sukker"
     ],
     "method": [
@@ -571,7 +572,8 @@
     ],
     "notes": [
       "Hedder Galop kringle pga. den er så hurtig.",
-      "Kan opbevares i fryseren og tøes op i ovnen efter behov"
+      "Kan opbevares i fryseren og tøes op i ovnen efter behov",
+      "Andre forslag til fyld/smag: 6 tsk kardemomme, revet skal af en citron, rosiner."
     ],
     "image": "./content/cakes/Galop kringle/image.png",
     "source_txt": "./content/cakes/Galop kringle/recipe.txt"
@@ -662,7 +664,13 @@
       "De bliver meget let mørke i bunden, kan hjælpe at lægge en bradepande i bunden af ovnen",
       "Pynt med glasur."
     ],
-    "notes": [],
+    "notes": [
+      "Skær et snit på langs i den rullede pølse, udvid snittet lidt, så der er plads til en strimmel blød nougat. Sammel marcipanen om nougaten.",
+      "Skær pølsen ud i passende størrelser og fom stykket og luk det i enderne.",
+      "Bages som ovenstående.",
+      "Når kagen er afkølet dyppes den i smeltet chokolade, så bunden er dækket,",
+      "Så er den klar til at pynte med glasur."
+    ],
     "image": "./content/cakes/Kransekage/image.png",
     "source_txt": "./content/cakes/Kransekage/recipe.txt"
   },
@@ -699,7 +707,7 @@
       "Den kolde mælk tilsættes.",
       "Gæren røres ud i blandingen.",
       "Sukker og æg tilsættes.",
-      "melet æltes i.",
+      "melet æltes i og dejen skal hvile ca. 30 min.",
       "Dejen rulles ud i 2 rektangulære stykker.",
       "Remonce smøres ud i midten på begge stykker.",
       "10-12 knuste makroner fordeles over remoncen på de 2 stykker.",
@@ -754,7 +762,6 @@
       "125 g knuste makroner",
       "125 g mel",
       "125 smeltet afkølet smør",
-      "1 ½ spsk mandelessens",
       "1 ½ tsk bagepulver",
       "Vendes i dejen",
       "50g hakkede mandler",
